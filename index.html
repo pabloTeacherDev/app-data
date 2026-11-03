@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Sabor Express - Catálogo y Pedidos</title>
+</head>
+<body>
+
+    <!-- 1. HEADER / CABECERA COMPACTA EN LÍNEA -->
+    <header>
+        <table border="0" width="100%" cellpadding="5">
+            <tr>
+                <td>
+                    <h1>🍔 El Sabor Express</h1>
+                    <p><em>Delivery Rápido y Antojos al Instante</em></p>
+                </td>
+                <td align="right">
+                    <p><strong>Menú Rápido:</strong> 
+                    <a href="#platos">Platos</a> | 
+                    <hr style="display:none;"><a href="#promos">Promos</a> | 
+                    <a href="#multimedia">Videos</a> | 
+                    <a href="#pedido">Pedir</a></p>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <hr>
+
+    <!-- 2. MAIN (CONTENIDO PRINCIPAL CON ESTRUCTURA VARIADA) -->
+    <main>
+
+        <!-- SECCIÓN 1: CATÁLOGO EN CUADRÍCULA 2x2 (4 IMÁGENES) -->
+        <section id="platos">
+            <h2>Nuestro Menú Destacado</h2>
+            <p>Conoce nuestra variedad de especialidades organizadas en cuadrícula:</p>
+
+            <!-- Tabla invisible para lograr 2 filas de 2 columnas (Cuadrícula 2x2) -->
+            <table border="0" width="100%" cellpadding="10" cellspacing="0">
+                <!-- Fila 1: Imagen 1 y 2 -->
+                <tr>
+                    <td width="50%" align="center" valign="top">
+                        <img src="https://via.placeholder.com/280x160" alt="Hamburguesa Clásica" width="280">
+                        <h3>1. Burger La Monstruosa</h3>
+                        <p>Doble carne, tocino y queso fundido. <strong>S/ 28.00</strong></p>
+                    </td>
+                    <td width="50%" align="center" valign="top">
+                        <img src="https://via.placeholder.com/280x160" alt="Salchipapa Suprema" width="280">
+                        <h3>2. Salchipapa Suprema</h3>
+                        <p>Hot dog, chorizo y papas nativas. <strong>S/ 22.00</strong></p>
+                    </td>
+                </tr>
+                <!-- Fila 2: Imagen 3 y 4 -->
+                <tr>
+                    <td width="50%" align="center" valign="top">
+                        <img src="https://via.placeholder.com/280x160" alt="Broaster Crocante" width="280">
+                        <h3>3. Pollo Broaster</h3>
+                        <p>2 Piezas crocantes con papas y cremas. <strong>S/ 18.00</strong></p>
+                    </td>
+                    <td width="50%" align="center" valign="top">
+                        <img src="https://via.placeholder.com/280x160" alt="Alitas BBQ" width="280">
+                        <h3>4. Alitas BBQ Picantes</h3>
+                        <p>10 Unidades bañadas en salsa de la casa. <strong>S/ 25.00</strong></p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 2: PROMOCIONES Y COMBOS (FORMATO DE LISTA HORIZONTAL) -->
+        <section id="promos">
+            <h2>Combos del Día</h2>
+            <p>Aprovecha nuestros packs especiales:</p>
+            
+            <table border="1" width="100%" cellpadding="8" cellspacing="0">
+                <tr>
+                    <th>Combo</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td><strong>Dúo Fast</strong></td>
+                    <td>2 Burgers + 2 Papas + 2 Gaseosas</td>
+                    <td align="center">S/ 48.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Familiar</strong></td>
+                    <td>8 Piezas de Pollo + Papas grandes + Gaseosa 1.5L</td>
+                    <td align="center">S/ 65.00</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 3: MULTIMEDIA (DISPOSICIÓN LADO A LADO) -->
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            
+            <!-- Tabla para colocar video y audio lado a lado sin CSS -->
+            <table border="0" width="100%" cellpadding="10">
+                <tr>
+                    <td width="50%" valign="top" align="center">
+                        <h3>Spot Comercial (Video)</h3>
+                        <video controls width="350">
+                            <source src="video_burger.mp4" type="video/mp4">
+                            Tu navegador no soporta video.
+                        </video>
+                    </td>
+                    <td width="50%" valign="top" align="center">
+                        <h3>Jingle Radial (Audio)</h3>
+                        <audio controls>
+                            <source src="jingle.mp3" type="audio/mpeg">
+                            Tu navegador no soporta audio.
+                        </audio>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 4: FORMULARIO DIRECTO (SIN FIELDSETS NI TÍTULOS PESADOS) -->
+        <section id="pedido">
+            <h2>Formulario Rápido de Pedido</h2>
+            <p>Ingresa tus datos y solicita tu delivery al instante (sin agrupaciones complejas):</p>
+
+            <form action="#" method="POST">
+                
+                <p>
+                    <label for="nombre">Nombre y Apellido:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Ruiz" size="45" required>
+                </p>
+
+                <p>
+                    <label for="tel">Celular de Contacto:</label><br>
+                    <input type="tel" id="tel" name="tel" placeholder="999888777" required>
+                </p>
+
+                <p>
+                    <label for="dir">Dirección de Entrega:</label><br>
+                    <input type="text" id="dir" name="dir" placeholder="Av. Principal 123" size="45" required>
+                </p>
+
+                <p>
+                    <label for="pago">Método de Pago:</label><br>
+                    <select id="pago" name="pago">
+                        <option value="yape">Yape / Plin</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="tarjeta">Tarjeta POS</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>¿Deseas salsas extras?</label><br>
+                    <label><input type="checkbox" name="salsa" value="aji"> Ají casero</label>
+                    <label><input type="checkbox" name="salsa" value="tartara" checked> Tártara</label>
+                </p>
+
+                <p>
+                    <label for="nota">Comentarios para el motorizado:</label><br>
+                    <textarea id="nota" name="nota" rows="3" cols="40" placeholder="Ej. Tocar fuerte el timbre..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar Pedido</button>
+                    <button type="reset">Limpiar</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- 3. FOOTER COMPACTO -->
+    <footer>
+        <p align="center">&copy; 2026 El Sabor Express. Todos los derechos reservados. | <a href="#platos">Ir arriba ▲</a></p>
+    </footer>
+
+</body>
+</html>
